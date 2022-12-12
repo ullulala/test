@@ -1,0 +1,502 @@
+@font-face { /* 여기어때 잘난체 */
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {  /* 지마켓 */
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {   /* 나눔스퀘어 네오 */
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 16px;
+    font-family: 'NanumSquareNeo-Variable'
+}
+.inner1{
+    width: 1400px;
+    margin: 0 auto;
+}
+.inner2{ 
+    width: 1200px;
+    margin: 0 auto;
+}
+.inner3{ /*메인, info : bg*/
+    width: 1500px;
+    margin: 0 auto;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*------------------------ header ------------------------*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    font-family: 'GmarketSansMedium';
+    /* background-color: #fff; */
+}
+header img{
+    position: relative;
+    top: 5px;
+}
+header ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+header .inner1{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items : center;
+}
+.ham{
+    display: flex;
+}
+.ham p{
+    margin-right: 20px;
+    border: solid 1px #ddd;
+    border-radius: 20px;
+    padding: 7px 15px;
+    font-size: 14px;
+}
+.ham .arrow{
+    padding-left: 12px;
+    padding-bottom: 5.5px;
+    width: 8px;
+    height: 7px;
+}
+.ham .icon_ham{
+    vertical-align: middle;
+    position: relative;
+    top: 3px;
+}
+
+/*------------------------ 메인배너 ------------------------*/
+
+#main_info .inner3{
+    height: 1355px;
+    background-image: url(../images/main_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#main_info .inner3 #main{
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(../images/main_slide.png);
+    background-size: 77%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#main h3{
+    padding-top: 225px;
+    font-size: 35px;
+    font-family: 'GmarketSansMedium';
+    color: #323232;
+}
+#main h2{
+    font-size: 70px;
+    font-family: 'yg-jalnan';
+    color: #ff5090;
+}
+
+/*------------------------ main section1 소개 ------------------------*/
+
+#info{
+    text-align: center;
+    padding: 90px 0;
+}
+#info .title_txt{
+    margin-top: 8px;
+    font-family: 'yg-jalnan';
+    font-size: 35px;
+    text-align: center;
+}
+#info h3{
+    background-color: #507eed;
+    border: solid 1px #000;
+    box-shadow: 2px 3px 0px #000;
+    color: #fff;
+    border-radius: 25px;
+    margin-right: 57px;
+    font-weight: 500;
+    font-size: 21px;
+    
+    width: 100px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#info ul{
+    width: 721px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 175px;
+}
+#info ul li{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#info ul li p{
+    text-align: left;
+    font-size: 20px;
+    padding-left: 50px;
+    line-height: 2.22rem;
+}
+
+
+#info ul li img{
+    margin-right: 25px;
+    vertical-align: bottom;
+    width: 150px;
+    height: auto;
+}
+#info ul li .yeojusi{
+    width: 115px;
+    height: auto;
+}
+#info .bg_man{
+    position: relative;
+    right: 555px;
+    bottom: 161px;
+}
+#info .bg_woman{
+    position: relative;
+    left: 710px;
+    bottom: 290px;
+}
+#info .bg_bl{
+    position: relative;
+    left: 380px;
+    bottom: 174px;
+}
+
+
+
+/*------------------------ main section2 프로그램 및 소식 ------------------------*/
+
+#section2{
+    padding: 95px 0;
+    background-color: #fafafa;
+}
+#section2 .inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 프로그램 소식 & 이벤트 공통 title */
+.title{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 95px;
+}
+.title img{
+    width: 55px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.title h1{
+    font-family: 'yg-jalnan';
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.title p{
+    font-size: 24px;
+}
+/* ******************************* */
+
+
+/* 프로그램 */
+#section2 #program{
+    width: 58%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#section2 #program div{
+    width: 325px;
+    height: 390px;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px 10px rgb(0 0 0 / 5%);
+    border-radius: 50px;
+}
+#program h2{
+    font-family: 'yg-jalnan';
+    font-size: 24px;
+    position: relative;
+    top: 30px;
+    left: 35px;
+    line-height: 2rem;
+}
+#program .content1{
+    background-image: url(../images/ceramic.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: -100px bottom;
+}
+#program .content2{
+    margin-top: 100px;
+    background-image: url(../images/store.jpg);
+    background-size: 178%;
+    background-repeat: no-repeat;
+    background-position: -33px bottom;
+}
+#program .content3{
+   background-image: url(../images/ceramic_2.jpg);
+   background-size: 140%;
+   background-repeat: no-repeat;
+   background-position: -15px 120px;
+}
+#program .content4{
+    margin-top: 100px;
+    background-image: url(../images/show.jpg);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center 125px;
+}
+
+/* sns */
+#section2 #sns{
+    width: 35%;
+}
+#sns p{
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#sns img{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 2px;
+    padding-right: 8px;
+    
+}
+#sns ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#sns ul li{
+    margin: 20px 15px 23px 0;
+    font-size: 20px;
+}
+#sns ul li a{
+    border: solid 1px #222;
+    padding: 12px 15px 12px 25px;
+    border-radius: 40px;
+}
+
+
+
+
+/*------------------------ main section3 이벤트 ------------------------*/
+
+#event{
+    padding-top: 95px;
+    background-image: url(../images/event_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -150px;
+}
+#event .title img{
+    width: 65px;
+    height: auto;
+}
+#event article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #222;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+#event article img{
+    width: 50%;
+    height: 450px;
+}
+#event article .img_cup{ /* 컵 이미지 */
+    border-radius: 100px 0 0 0 ;
+}
+#event article .img_ticket{  /* 티켓 이미지 */
+    border-radius: 0 0 100px 0 ;
+}
+
+/* 이벤트 텍스트 박스 */
+#event .box1, #event .box2{
+    width: 44%;
+    display: inline-block;
+}
+
+.box1{
+    background-image: url(../images/highlight_blue.png);
+    background-repeat: no-repeat;
+    background-size: 145px 20px;
+    background-position: 0 165px;
+}
+.box2{
+    text-align: right;
+    background-image: url(../images/highlight_pink.png);
+    background-repeat: no-repeat;
+    background-size: 195px 20px;
+    background-position: 243px 165px;
+}
+#event article .box2 h3{
+    background-color: #ff5090;
+}
+
+#event h3{
+    display: inline-block;
+    background-color: #507eed;
+    color: #fff;
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    font-size: 24px;
+    border: solid 1px #000;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0 #000;
+    width: 160px;
+    padding: 7px 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#event h2{
+    font-family: 'yg-jalnan';
+    font-size: 35px;
+}
+#event article p{
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(0,0,0,0.5);
+    line-height: 140%;
+}
+
+#event h5{
+    display: inline-block;
+    background-color: #507eed;
+    border-radius: 50px;
+    width: 160px;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#event h2{
+    margin-bottom: 20px;
+}
+#event h2 span{
+    font-size: 28px;
+}
+#event a{
+    display: block;
+    background-color: #ff5090;
+    color: #fff;
+    width: 400px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 23px 0;
+    margin: 0 auto;
+    margin-top: 95px;
+    font-size: 24px;
+}
+#event a span{
+    padding-left: 20px;
+}
+
+/*------------------------ 주최/주관 ------------------------*/
+#section4{
+    margin-top: 150px;
+    padding: 15px 0 27px 0;
+    width: 100%;
+    background-color: #fafafa;
+    font-size: 19px;
+}
+.ci{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ci :nth-child(1) img{
+    width: 100px;
+    height: auto;
+    padding-left: 45px;
+    position: relative;
+    top: 5px;
+}
+.ci :nth-child(2) img{
+    width: 160px;
+    height: auto;
+    padding: 0 45px;
+    position: relative;
+    top: 13px;
+}
+.ci p span{
+    padding-left: 45px;
+    font-weight: 600;
+}
+
+/*------------------------ footer ------------------------*/
+
+footer{
+    font-size: 14px;
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0;
+}
+footer img{
+    margin-bottom: 40px;
+    width: 200px;
+    height: auto;
+}
+footer p{
+    line-height: 1.7rem;
+    font-weight: 100;
+}
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 81px;
+}
+footer ul li{
+    padding-left: 8px;
+}
+footer .inner2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer span{
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+}
