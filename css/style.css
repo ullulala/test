@@ -18,7 +18,51 @@
     font-weight: normal;
     font-style: normal;
 }
+/* **************** 팝업 ******************* */
+#pop1{
+    display: none;
+}
 
+.popup_bg{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    top: 0;
+}
+.popup{
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    background-color: #EE91B3;
+    position: relative;
+    top: 150px;
+    left: 150px;
+    text-align: center;
+    line-height: 2;
+}
+.popup span{
+    font-weight: 600;
+}
+.close{
+    background-color: aliceblue;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 13px;
+}
+input[id="pop1"]:checked ~ .popup_bg{
+    display: none;  
+}
+
+.open{
+    background-color: #00D4AD;
+    padding: 5px 10px;
+}
+
+/* ******************* 본문 css ********************* */
 *{
     margin:0;
     padding:0;
@@ -52,7 +96,6 @@ header{
     width: 100%;
     height: 100px;
     font-family: 'GmarketSansMedium';
-    /* background-color: #fff; */
 }
 header img{
     position: relative;
@@ -75,11 +118,16 @@ header .inner1{
     display: flex;
 }
 .ham p{
+    display: block;
     margin-right: 20px;
     border: solid 1px #ddd;
-    border-radius: 20px;
-    padding: 7px 15px;
+    border-radius: 50px;
+    padding: 7px 15px 5px 15px;
     font-size: 14px;
+    
+}
+.ham p:hover{
+    border: solid 1px #000;
 }
 .ham .arrow{
     padding-left: 12px;
@@ -92,6 +140,7 @@ header .inner1{
     position: relative;
     top: 3px;
 }
+
 
 /*------------------------ 메인배너 ------------------------*/
 
@@ -242,7 +291,6 @@ header .inner1{
     width: 325px;
     height: 390px;
     background-color: #fff;
-    box-shadow: 1px 1px 30px 10px rgb(0 0 0 / 5%);
     border-radius: 50px;
 }
 #program h2{
@@ -279,8 +327,13 @@ header .inner1{
     background-repeat: no-repeat;
     background-position: center 125px;
 }
+#program a:hover{
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
 
-/* sns */
+
+/**************** sns ****************/
 #section2 #sns{
     width: 35%;
 }
@@ -303,6 +356,7 @@ header .inner1{
     align-items: center;
 }
 
+
 #sns ul li{
     margin: 20px 15px 23px 0;
     font-size: 20px;
@@ -312,6 +366,14 @@ header .inner1{
     padding: 12px 15px 12px 25px;
     border-radius: 40px;
 }
+
+#sns ul li a:hover{
+    background-color: #ff5090;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+
 
 
 
@@ -426,9 +488,17 @@ header .inner1{
     margin: 0 auto;
     margin-top: 95px;
     font-size: 24px;
+    box-sizing: border-box;
 }
 #event a span{
     padding-left: 20px;
+}
+#event a:hover{
+    border: solid 1px #000;
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+    box-sizing: border-box;
 }
 
 /*------------------------ 주최/주관 ------------------------*/
@@ -440,7 +510,7 @@ header .inner1{
     font-size: 19px;
 }
 .ci{
-    width: 50%;
+    width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
