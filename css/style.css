@@ -33,8 +33,8 @@
     z-index: 91;
 }
 .popup{
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     padding: 50px;
     background-color: #EE91B3;
     position: relative;
@@ -120,31 +120,26 @@ header .inner1{
 .ham{
     display: flex;
 }
-.ham p{
-    display: block;
-    margin-right: 20px;
+
+select{
     border: solid 1px #ddd;
+    padding: 7px 10px;
     border-radius: 50px;
-    padding: 7px 15px 5px 15px;
+    margin-right: 20px;
+    position: relative;
+    bottom: 3px;
     font-size: 14px;
-    
 }
 header li:hover{
     color: #ff5090;
 }
-.ham p:hover{
-    border: solid 1px #000;
-}
-.ham .arrow{
-    padding-left: 12px;
-    padding-bottom: 5.5px;
-    width: 8px;
-    height: 7px;
-}
+
 .ham .icon_ham{
     vertical-align: middle;
     position: relative;
-    top: 3px;
+    top: 1px;
+    width: 32px;
+    height: auto;
 }
 
 
@@ -156,7 +151,9 @@ header li:hover{
     background-repeat: no-repeat;
     background-position: bottom right;
 }
-#main_info .inner3 #main{
+
+/* main_slide_1 */
+#main_info #main1{
     width: 1400px;
     height: 600px;
     margin: 0 auto;
@@ -165,13 +162,58 @@ header li:hover{
     background-repeat: no-repeat;
     background-position: bottom right;
 }
-#main h3{
+#main1 h3{
     padding-top: 225px;
     font-size: 35px;
     font-family: 'GmarketSansMedium';
     color: #323232;
 }
-#main h2{
+#main1 h2{
+    font-size: 70px;
+    font-family: 'yg-jalnan';
+    color: #ff5090;
+}
+
+/* main_slide_2 */
+#main_info #main2{
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(../images/main_slide2.png);
+    background-size: 77%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#main2 h3{
+    padding-top: 225px;
+    font-size: 35px;
+    font-family: 'GmarketSansMedium';
+    color: #323232;
+}
+#main2 h2{
+    font-size: 70px;
+    font-family: 'yg-jalnan';
+    color: #ff5090;
+}
+
+
+/* main_slide_3 */
+#main_info #main3{
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(../images/main_slide3.png);
+    background-size: 77%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#main3 h3{
+    padding-top: 225px;
+    font-size: 35px;
+    font-family: 'GmarketSansMedium';
+    color: #323232;
+}
+#main3 h2{
     font-size: 70px;
     font-family: 'yg-jalnan';
     color: #ff5090;
@@ -365,11 +407,11 @@ header li:hover{
     align-items: center;
 }
 
-
 #sns ul li{
     margin: 20px 15px 23px 0;
     font-size: 20px;
 }
+
 #sns ul li a{
     border: solid 1px #222;
     background-color: #fff;
@@ -381,7 +423,6 @@ header li:hover{
     border: solid 1px #ff5090;
     background-color: #ff5090;
     color: #fff;
-    border: none;
     transition: 0.3s;
 }
 
@@ -400,7 +441,7 @@ header li:hover{
     background-image: url(../images/event_bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0 -150px;
+    background-position: 0 -185px;
 }
 #event .title img{
     width: 65px;
@@ -507,9 +548,9 @@ header li:hover{
 }
 #event .last_a{
     display: block;
-    background-color: #ff5090;
-    border: solid 1px #ff5090;
-    color: #fff;
+    border: solid 1px #000;
+    background-color: #fff;
+    color: #000;
     width: 400px;
     border-radius: 50px;
     text-align: center;
@@ -523,9 +564,9 @@ header li:hover{
     padding-left: 20px;
 }
 #event .last_a:hover{
-    border: solid 1px #000;
-    background-color: #fff;
-    color: #000;
+    background-color: #ff5090;
+    border: solid 1px #ff5090;
+    color: #fff;
     transition: 0.3s;
 }
 
@@ -599,3 +640,29 @@ footer span{
     color: rgba(255,255,255,0.4);
     font-size: 12px;
 }
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+
+#top{
+    display:scroll;
+        position:fixed;
+        bottom:50px;
+        right:100px;
+        border: solid 2px #444;
+        background-color: #fff;
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+}
+#top span{
+    position: relative;
+    top: 19px;
+}
+
+
+
